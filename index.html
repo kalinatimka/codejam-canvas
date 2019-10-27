@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Codejam-Canvas</title>
 </head>
@@ -19,39 +19,55 @@
       <div class="tools block">
         <div class="tools--input">
           <input type="radio" name="tool" value="paint_bucket" id="paint_bucket">
-          <label for="paint_bucket">Paint bucket</label>
+          <label class="paint_bucket" for="paint_bucket">Paint bucket</label>
         </div>
         <div class="tools--input">
           <input type="radio" name="tool" value="color_picker" id="color_picker">
-          <label for="color_picker">Choose color</label>
+          <label class="color_picker" for="color_picker">Choose color</label>
         </div>
         <div class="tools--input">
           <input type="radio" name="tool" value="move_tool" id="move_tool">
-          <label for="move_tool">Move</label>
+          <label class="move_tool" for="move_tool">Move</label>
         </div>
         <div class="tools--input">
           <input type="radio" name="tool" value="transform_tool" id="transform_tool">
-          <label for="transform_tool">Transform</label>
+          <label class="transform_tool" for="transform_tool">Transform</label>
         </div>
       </div>
       <div class="color_switcher block">
+        <div class="tools--input">
+          <input type="radio" name="color" value="current_color" id="current_color">
+          <label class="current_color" for="current_color">Current color</label>
+        </div>
+        <div class="tools--input">
+          <input type="radio" name="color" value="prev_color" id="prev_color">
+          <label class="prev_color" for="prev_color">Prev color</label>
+        </div>
+        <div class="tools--input">
+          <input type="radio" name="color" value="first_color" id="first_color">
+          <label class="first_color" for="first_color">Red</label>
+        </div>
+        <div class="tools--input">
+          <input type="radio" name="color" value="second_color" id="second_color">
+          <label class="second_color" for="second_color">Blue</label>
+        </div>
       </div>
     </aside>
     <img class="hide_image" src="data/image.png" alt="image" width="512" height="512">
     <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
     <aside>
-      <div class="size_switcher">
+      <div class="size_switcher block">
           <div class="size_switcher--input">
               <input type="radio" name="size_switcher" value="4x4" id="size_switcher--4x4" checked>
-              <label for="size_switcher--4x4">4x4</label>
+              <label class="size_switcher--4x4" for="size_switcher--4x4">4x4</label>
             </div>
             <div class="size_switcher--input">
               <input type="radio" name="size_switcher" value="32x32" id="size_switcher--32x32" >
-              <label for="size_switcher--32x32">32x32</label>
+              <label class="size_switcher--32x32" for="size_switcher--32x32">32x32</label>
             </div>
             <div class="size_switcher--input">
               <input type="radio" name="size_switcher" value="image" id="size_switcher--image">
-              <label for="size_switcher--image">Image</label>
+              <label class="size_switcher--image" for="size_switcher--image">Image</label>
             </div>
       </div>
     </aside>

@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  padding: 8px 30px 16px;
+  box-shadow: 0 0 10px 0 #c3c3c3;
+}
+
+.header--menu {
+  margin-right: 35px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  border: 0;
+  background: transparent url("images/menu.png") center no-repeat;
+  cursor: pointer;
+}
+
+.header--main_heading {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.header--options {
+  margin-left: auto;
+  display: block;
+  width: 12px;
+  height: 24px;
+  font-size: 0;
+  border: 0;
+  background: transparent url("images/options.png") center no-repeat;
+  cursor: pointer;
+}
+
+.main_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.canvas {
+  border: 1px solid black;
+  image-rendering: pixelated;
+}
+
+main {
+  padding: 0 30px;
+}
+
+.hide_image {
+  display: none;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.block {
+  width: 228px;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px 0 #c3c3c3;
+}
+
+.tools--input label,
+.size_switcher--input label {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  padding: 12px 10px 12px 76px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background-position: 20px 10px;
+  background-repeat: no-repeat;
+}
+
+.tools--input label:hover,
+.size_switcher--input label:hover {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.tools--input input,
+.size_switcher--input input{
+  display: none;
+}
+
+.tools--input input:checked + label,
+.size_switcher--input input:checked + label{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.paint_bucket {
+  background-image: url("images/bucket.png");
+}
+
+.color_picker {
+  background-image: url("images/color-picker.png");
+}
+
+.move_tool {
+  background-image: url("images/move.png");
+}
+
+.transform_tool{
+  background-image: url("images/transform.png");
+}
+
+.size_switcher--4x4 {
+  background-image: url("images/rectangle.png");
+}
+
+.size_switcher--32x32 {
+  background-image: url("images/rectangle.png");
+}
+
+.size_switcher--image {
+  background-image: url("images/rectangle.png");
+}
+
+.color_switcher {
+  margin-top: 90px;
+}
+
+.current_color {
+  background-image: url("images/current.png");
+}
+.prev_color {
+  background-image: url("images/prev.png");
+}
+.first_color {
+  background-image: url("images/first.png");
+}
+.second_color {
+  background-image: url("images/second.png");
+}
