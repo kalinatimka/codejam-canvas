@@ -1,23 +1,3 @@
-// const concat = (xs, ys) => xs.concat(ys);
-
-// const hexToRGBA = hexStr => [
-//     parseInt(hexStr.substr(1, 2), 16),
-//     parseInt(hexStr.substr(3, 2), 16),
-//     parseInt(hexStr.substr(5, 2), 16),
-//     255
-//   ];
-
-// const flattenedRGBAValues = largeArray
-//   .reduce(concat)  // 1d list of hex codes
-//   // .map(hexToRGBA)  // 1d list of [R, G, B, A] byte arrays
-//   .reduce(concat); // 1d list of bytes
-
-// // Render on screen for demo
-// const cvs = document.getElementById('canvas');
-// const ctx = cvs.getContext("2d");
-// const imgData = new ImageData(Uint8ClampedArray.from(flattenedRGBAValues), 32, 32);
-// ctx.putImageData(imgData, 0, 0);
-
 function drawImage (array, canvas) {
   var ctx = canvas.getContext('2d');
   var step = canvas.width / array.length;
@@ -63,18 +43,6 @@ function checkRadio() {
     var myImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     draw(myImageData.data, largeArray, canvas);
     ctx.putImageData(myImageData, 0, 0);
-  }
-  else if (radioArray[2].checked) {
-    // var cvs = document.createElement('canvas');
-    // var context = cvs.getContext('2d');
-    // var img = document.querySelector('.hide_image');
-    // cvs.width = img.width;
-    // cvs.height = img.height;
-    // context.drawImage(img, 0, 0 );
-    // var myData = context.getImageData(0, 0, img.width, img.height);
-
-    // ctx.clearRect(0, 0, canvas.width, canvas.height);
-    // ctx.drawImage(image, 0, 0);
   }
 }
 
